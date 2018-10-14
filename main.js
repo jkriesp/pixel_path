@@ -3,7 +3,7 @@ const resetButton = document.querySelector('#reset')
 let square = document.createElement('div');
 
 let fixed_size = 640;
-let rowSquares = 8;
+let rowSquares = 4;
 
 makeGrid();
 
@@ -18,10 +18,6 @@ resetButton.addEventListener('click', function () {
     } catch (error) {
         alert("Please input a value from 2-64. Error: " + error);
     }
-
-
-
-
 });
 
 function removeGrid() {
@@ -63,23 +59,6 @@ function makeGrid() {
     });
 }
 
-function addBlack() {
-    console.log(arguments[0]);
-}
-
-function createSquare() {
-    square = document.createElement('div');
-    square.setAttribute('id', 'square');
-    square.setAttribute(arguments[0], arguments[1]);
-    square.style.cssFloat = "left";
-    square.style.background = "white";
-    square.style.width = size + "px";
-    square.style.height = size + "px";
-    container.appendChild(square);
-}
-
-
-
 function addRandomColor() {
     const red = getRandomInt(255);
     const green = getRandomInt(255);
@@ -93,4 +72,3 @@ function getRandomInt(max) {
     // Helper method to get random integer
     return Math.floor(Math.random() * Math.floor(max));
 }
-
