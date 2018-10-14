@@ -7,8 +7,9 @@ html {
   }
 
 .container {
-    background-color: black;
+    background-color: #001739;
     margin: auto;
+
 
 }
 
@@ -19,7 +20,7 @@ html {
 }
 
 .btnContainer #reset {
-    background-color: #9F255E;
+    background-color: #C02954;
     border: none;
     color: antiquewhite;
     display: inline-block;
@@ -79,6 +80,7 @@ html {
 
 footer {
     position: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     bottom: 0;
     left: 0;
     width: 100%;
